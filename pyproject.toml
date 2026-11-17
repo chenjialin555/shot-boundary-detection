@@ -7,7 +7,7 @@ name = "shot-boundary-detection"
 version = "0.1.0"
 description = "基于直方图的视频分镜检测：绝对阈值 + 持续性检验 + PELT 变点检测 + 空间校验"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "sbd contributors" }]
 keywords = [

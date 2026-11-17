@@ -1,6 +1,6 @@
 # Shot Boundary Detection (直方图分镜)
 
-[![python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 用**相邻帧直方图差分**做视频分镜（镜头边界 / shot boundary detection）。
