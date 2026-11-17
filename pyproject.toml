@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shot-boundary-detection"
+version = "0.1.0"
+description = "基于直方图的视频分镜检测：绝对阈值 + 持续性检验 + PELT 变点检测 + 空间校验"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "sbd contributors" }]
+keywords = [
+    "shot-boundary-detection",
+    "scene-detection",
+    "video",
+    "histogram",
+    "cut-detection",
+    "change-point",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = ["numpy>=1.22"]
+
+[project.optional-dependencies]
+video = ["opencv-python>=4.5"]
+images = ["pillow>=9.0"]
+dev = ["pytest>=7", "pillow>=9.0"]
+
+[project.scripts]
+sbd = "sbd.cli:main"
+
+[tool.setuptools]
+packages = ["sbd"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
